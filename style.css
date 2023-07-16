@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Colors */
+
+ /* Primary  */
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+     /* Neutral  */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+    /* Fonts */
+    
+--Font-size: 16px;
+--Font-Family: 'Red Hat Display',sans-serif;
+--Font-Weight-normal: 500;
+--Font-Weight-medium: 700;
+--Font-Weight-bold: 900;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: var(--Font-Family);
+    font-size: var(--Font-size);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color:var(--Pale-blue);
+    background-size: contain;
+}   
+main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 570px;
+    background-color:var(--Very-pale-blue);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px var(--Very-pale-blue);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.play{
+border-radius: 20px 20px 0 0;
+width: 100%;
+}
+h1{
+color: var(--Dark-blue);
+font-size: 1.5rem;
+margin: 1.3rem;
+}
+p{
+    color: var(--Desaturated-blue);
+    margin-bottom:1.3rem;
+}
+.music{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.3rem; 
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    height: 5.5rem;
+    width: 80%;
+    margin: 1.3rem 2rem;
+}
+.left{
+    display: flex;
+    gap: .9rem;
+}
+.left > img{
+    width: 3rem;
+    height: 3rem;
+}
+a{
+    margin-top: .8rem;
+    color: var(--Bright-blue);
+}
+a:hover{
+    color: rgb(119, 78, 232);
+    text-decoration: none;
+}
+.tittle{
+    font-size: 14px;
+    margin-top: .4rem;
+}
+.btn{
+    padding: 12px 30px;
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 8px;
+    color: var(--Very-pale-blue);
+    width: 80%;
+    margin: 0 0.7rem 1rem 0.7rem;
+    box-shadow: 2px 2px 2px var(--Desaturated-blue);
+    font-weight: var(--Font-Weight-medium);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(119, 78, 232);
+}
+.cancel{
+    margin-top: .5rem;
+    font-weight: var(--Font-Weight-medium);
+    cursor: pointer;
+}
+.cancel:hover{
+    color: var(--Dark-blue);
+}
+@media (max-width:650px) {
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
