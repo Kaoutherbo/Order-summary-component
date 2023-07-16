@@ -43,7 +43,7 @@ main{
     transform: translate(-50%,-50%);
     width: 350px;
     height: 570px;
-    background-color:var(--Very-pale-blue);
+    background-color:#fff;
     border-radius: 20px;
     box-shadow: 1px 1px 1px var(--Very-pale-blue);
     justify-content: center;
